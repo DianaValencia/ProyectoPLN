@@ -1,0 +1,3 @@
+Sea un elemento x que pertenece a el conjunto universal U. Entonces el elemento x pertenece a el conjunto complemento de A o a el conjunto A porque la unión de el conjunto complemento de A con el conjunto A es igual a el conjunto universal U. En particular, si el elemento x pertenece a el conjunto A, entonces el elemento x pertenece a el conjunto B debido a que el conjunto B contiene a el conjunto A. Por lo tanto, se deduce que el elemento x pertenece a el conjunto complemento de A o el elemento x pertenece a el conjunto A, es decir, el elemento x pertenece a la unión de el conjunto complemento de A con el conjunto B.   
+
+
