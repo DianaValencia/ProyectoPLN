@@ -1,0 +1,160 @@
+<html>
+<meta charset="utf-8">
+
+<head>
+<title>Analizador Sintáctico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+  <link rel="stylesheet" href="//getbootstrap.com/examples/jumbotron/jumbotron.css">
+  <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}static/css/tree-viewer.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="{{STATIC_URL}}static/js/parser.js"></script>
+  <script type="text/javascript" src="{{STATIC_URL}}static/js/d3Tree.js"></script>
+
+  <style> 
+        h1 {
+	    font-size: 24px;
+	    font-weight: bold;
+	    color: #8c1515;
+	    margin-top: 18px;
+  </style>
+        
+</head>
+<script type="text/javascript">
+var defaultPTBText = "(S (NP-SBJ (NP (NNP Pierre) (NNP Vinken) ) (, ,) (ADJP (NP (CD 61) (NNS years) ) (JJ old) ) (, ,) ) (VP (MD will) (VP (VB join) (NP (DT the) (NN board) ) (PP-CLR (IN as) (NP (DT a) (JJ nonexecutive) (NN director) )) (NP-TMP (NNP Nov.) (CD 29) ))) (. .) )";
+
+function onSub() {
+        
+	var textArea = document.getElementById("text");
+	// Reset the colour
+	textArea.style.color = "black";
+	var data = textArea.value;
+	// Escape backslashes
+	data = data.replace(/\\/g, "\\\\");
+	// Parse the string into JSON (defined in parser.js)
+	var jsonData = parse(data);
+	var sentenceString = "";
+	sentenceString = getYield(jsonData, sentenceString);
+	// Add the sentence (yield of the JSON tree) to the sentence container
+	document.getElementById("sentence-container").innerHTML = "<p>"+sentenceString+"</p>";
+	d3Tree(jsonData);
+	return false;
+}
+
+
+function getYield(node, string){
+	if (node.children == null) string = string.concat(node.name, " ");
+	else {
+		for (var i in node.children) {
+			var child = node.children[i];
+			string = getYield(child, string);
+		}
+	}
+	return string;
+}
+
+function loadTextArea(type) {
+	var textArea = document.getElementById("text");
+		textArea.style.color = "black";
+	if (type == "PTB") textArea.value = defaultPTBText;
+}
+
+window.onload = function() {
+	var textArea = document.getElementById("text");
+	textArea.onfocus = function() {
+		textArea.style.color = "black";
+		if (textArea.value == "Enter your tree here...")
+			textArea.value = "";
+	};
+	textArea.onblur = function() {
+		if (textArea.value == "") {
+			textArea.style.color = "grey";
+			textArea.value = "Enter your tree here...";
+		}
+	}
+}
+</script>
+
+<body>
+
+ <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+         <a class="navbar-brand" href="#">Proyecto PLN </a>
+        </div>
+            <form action="" method="post"> 
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/analizador/parseval">Eval</a></li>
+            </ul> 
+            </form>       
+      </div>
+     </nav>
+
+
+
+   <div class="container">
+    <h1>Analizador Sintáctico</h1>
+     <div class="jumbotron">
+      <form action="" method="post"> 
+      Por favor ingresar la sentencia para analizar:<br/>
+       <input type="hidden" name="sentencia"
+              id="sentencia"
+              value="My dog also likes eating sausage." />
+
+       <textarea method="post" name="query" id="query"
+         style="width: 400px; height: 8em"
+         rows="60" cols="12">{{textoCampo}}</textarea><br/>
+
+      Analizador:
+       <select name="parserSelect" id="parserSelect" >        
+           <option value="Stanford" >Stanford</option>        
+           <option value="Bikel" >Bikel</option>
+       </select>
+
+       <input type="submit" value="Analizar" name="analizar" id="parseButton"/>
+      </form>
+     </div>
+   </div>
+
+   <div class="container">
+
+    <h4>Parse</h4>
+     <pre id="parse" class="spacingFree">{{campoParse}}</pre>
+
+   </div>
+
+<div class="wrapper">
+	<div id="info">
+		<h3>Árbol Sintáctico</h3>
+	</div>
+	<div style="text-align: center;">
+    <div id="tree-container"></div>
+	<div id="sentence-container"></div>
+	<div id="input-text">
+		{% if req %}
+        <textarea id="text" rows="5" style="color: grey;">{{campoParse}}</textarea>
+        <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+    var elem= document.getElementById("submit-button");
+        elem.onclick.apply(elem);
+        elem.hidden =  true;
+        elem= document.getElementById("text")
+elem.hidden =  true;
+});
+        
+        </script>
+        {% else %}
+        <textarea id="text" rows="5" style="color: grey;">Enter your tree here...</textarea>
+      	{% endif %}
+	</div>
+	<div id="input-submit">
+			<input type="submit" id="submit-button" value="View Tree" onclick="return onSub();" />
+	</div>
+	</div>
+
+   </div></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>Analizador Sintáctico</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+        <link rel="stylesheet" href="//getbootstrap.com/examples/jumbotron/jumbotron.css">
+        <style> 
+        h1 {
+	    font-size: 24px;
+	    font-weight: bold;
+	    color: #8c1515;
+	    margin-top: 18px;
+        </style>
+        
+  </head>
+
+    
+  <body>
+
+   <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+         <a class="navbar-brand" href="/analizador">Proyecto PLN </a>
+        </div>
+          
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Eval</a></li>
+              <li><a href="/analizador/features">Features</a></li>
+            </ul>          
+      </div>
+     </nav>
+   </div>
+
+   <div class="container">
+    <h1>Parseval</h1>
+     <div class="jumbotron">
+      <form action="" method="post"> 
+      Por favor seleccione los archivos:<br/>
+       <input type="hidden" name="sentencia"
+              id="sentencia"
+              value="My dog also likes eating sausage." />
+
+       <textarea method="post" name="query" id="query"
+         style="width: 400px; height: 8em"
+         rows="60" cols="12">{{textoCampo}}</textarea><br/>
+
+      Parseval:
+
+       <input type="submit" value="Seleccionar" name="seleccionar" id="parseButton"/>
+      </form>
+     </div>
+   </div>
+
+
+   <div class="container">
+    <h1>Medidas de desempeño</h1>
+
+    <div class="container">
+
+    <h4>Eval Árbol Stanford</h4>
+     <pre id="evalStanford" class="spacingFree">{{campoEvalStanford}}</pre>
+
+   </div>
+
+  <div class="container">
+
+    <h4>Eval Árbol Bikel</h4>
+     <pre id="evalBikel" class="spacingFree">{{campoEvalBikel}}</pre>
+
+   </div>
+
+
+   </div>
+  </body>
+</html>
