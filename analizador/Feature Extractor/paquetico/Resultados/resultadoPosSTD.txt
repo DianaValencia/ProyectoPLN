@@ -1,0 +1,6 @@
+The_DT federal_JJ government_NN suspended_VBD sales_NNS of_IN U.S._NNP savings_NNS bonds_NNS because_IN Congress_NNP has_VBZ n't_RB lifted_VBN the_DT ceiling_NN on_IN government_NN debt_NN ._.
+Until_IN Congress_NNP acts_VBZ ,_, the_DT government_NN has_VBZ n't_RB any_DT authority_NN to_TO issue_VB new_JJ debt_NN obligations_NNS of_IN any_DT kind_NN ,_, the_DT Treasury_NNP said_VBD ._.
+The_DT government_NN 's_POS borrowing_NN authority_NN dropped_VBD at_IN midnight_NN Tuesday_NNP to_TO $_$ 2.80_CD trillion_CD from_IN $_$ 2.87_CD trillion_CD ._.
+Legislation_NN to_TO lift_VB the_DT debt_NN ceiling_NN is_VBZ ensnarled_VBN in_IN the_DT fight_NN over_IN cutting_VBG capital-gains_JJ taxes_NNS ._.
+The_DT House_NNP has_VBZ voted_VBN to_TO raise_VB the_DT ceiling_NN to_TO $_$ 3.1_CD trillion_CD ,_, but_CC the_DT Senate_NNP is_VBZ n't_RB expected_VBN to_TO act_VB until_IN next_JJ week_NN at_IN the_DT earliest_JJS ._.
+The_DT Treasury_NNP said_VBD the_DT U.S._NNP will_MD default_VB on_IN Nov._NNP 9_CD if_IN Congress_NNP does_VBZ n't_RB act_VB by_IN then_RB ._.

@@ -1,0 +1,1 @@
+((She (PRP))(has (VBZ))(finished (VBN))(her (PRP$))(homework (NN))(. (.)))

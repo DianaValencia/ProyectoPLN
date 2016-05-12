@@ -1,0 +1,13 @@
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ has)
+      (VP (VBN finished)
+        (NP (PRP$ her) (NN homework))))))
+
+nsubj(finished-3, She-1)
+aux(finished-3, has-2)
+root(ROOT-0, finished-3)
+poss(homework-5, her-4)
+dobj(finished-3, homework-5)
+

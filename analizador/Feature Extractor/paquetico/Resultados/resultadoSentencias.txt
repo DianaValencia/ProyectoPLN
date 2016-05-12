@@ -1,0 +1,54 @@
+1||||||||  federal_JJ government_NN suspended_VBD sales_NNS U.S._NNP savings_NNS bonds_NNS Congress_NNP n't_RB lifted_VBN ceiling_NN government_NN debt_NN ._.
+ ||||||||  |||||||| , U.S., Congress||||||||  (NP (DT The) (JJ federal) (NN government))
+ (NP
+ (NP (NNS sales))
+ (PP (IN of)
+ (NP (NNP U.S.) (NN savings) (NNS bonds))))
+ (NP (NNP Congress))
+ (NP
+ (NP (DT the) (NN ceiling))
+ (PP (IN on)
+ (NP (NN government) (NN debt)))))))))
+|||||||| The federal government suspended sales of U.S. savings bonds because Congress hasn't lifted the ceiling on government debt. 
+2||||||||  Congress_NNP acts_VBZ ,_, government_NN n't_RB authority_NN issue_VB new_JJ debt_NN obligations_NNS kind_NN ,_, Treasury_NNP said_VBD ._.
+ ||||||||  |||||||| , Congress, Treasury||||||||  (NP (NNP Congress) (NNS acts)))
+ (NP (DT the) (NN government))
+ (NP (DT any) (NN authority)
+ (NP
+ (NP (JJ new) (NN debt) (NNS obligations))
+ (PP (IN of)
+ (NP (DT any) (NN kind))))))))))
+ (NP (DT the) (NNP Treasury))
+|||||||| Until Congress acts, the government hasn't any authority to issue new debt obligations of any kind, the Treasury said. 
+3||||||||  government_NN 's_POS borrowing_NN authority_NN dropped_VBD midnight_NN Tuesday_NNP $_$ 2.80_CD trillion_CD $_$ 2.87_CD trillion_CD ._.
+ ||||||||  |||||||| ||||||||  (NP
+ (NP (DT The) (NN government) (POS 's))
+ (NN borrowing) (NN authority))
+ (NP (NN midnight)))
+ (NP (NNP Tuesday))
+ (NP
+ (QP ($ $) (CD 2.80) (CD trillion))))
+ (NP
+ (QP ($ $) (CD 2.87) (CD trillion)))))
+|||||||| The government's borrowing authority dropped at midnight Tuesday to $2.80 trillion from $2.87 trillion.4||||||||  Legislation_NN lift_VB debt_NN ceiling_NN ensnarled_VBN fight_NN cutting_VBG capital-gains_JJ taxes_NNS ._.
+ ||||||||  |||||||| ||||||||  (NP (NN Legislation)
+ (NP (DT the) (NN debt) (NN ceiling))))))
+ (NP (DT the) (NN fight)))
+ (NP (JJ capital-gains) (NNS taxes)))))))
+|||||||| Legislation to lift the debt ceiling is ensnarled in the fight over cutting capital-gains taxes. 
+5||||||||  House_NNP voted_VBN raise_VB ceiling_NN $_$ 3.1_CD trillion_CD ,_, Senate_NNP n't_RB expected_VBN act_VB next_JJ week_NN earliest_JJS ._.
+ ||||||||  |||||||| , Senate||||||||  (NP (DT The) (NNP House))
+ (NP (DT the) (NN ceiling))
+ (NP
+ (QP ($ $) (CD 3.1) (CD trillion))))))))))
+ (NP (DT the) (NNP Senate))
+ (NP (JJ next) (NN week)))
+ (NP (DT the) (JJS earliest)))))))))
+|||||||| The House has voted to raise the ceiling to $3.1 trillion, but the Senate isn't expected to act until next week at the earliest.
+6||||||||  Treasury_NNP said_VBD U.S._NNP default_VB Nov._NNP 9_CD Congress_NNP n't_RB act_VB ._.
+ ||||||||  |||||||| , Treasury, U.S., Congress||||||||  (NP (DT The) (NNP Treasury))
+ (NP (DT the) (NNP U.S.))
+ (NP (NNP Nov.) (CD 9))
+ (NP (NNP Congress))
+ (NP (RB then))))))))))))
+|||||||| The Treasury said the U.S. will default on Nov. 9 if Congress doesn't act by then. 

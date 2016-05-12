@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN debacle))
+      (PP (IN in)
+        (NP (NNP Flint))))
+    (VP (VBD began)
+      (S
+        (VP (TO to)
+          (VP (VB unfold)
+            (ADVP
+              (NP (CD two) (NNS years))
+              (RB ago))))))
+    (. .)))
+
+det(debacle-2, The-1)
+nsubj(began-5, debacle-2)
+nsubj(unfold-7, debacle-2)
+prep_in(debacle-2, Flint-4)
+root(ROOT-0, began-5)
+aux(unfold-7, to-6)
+xcomp(began-5, unfold-7)
+num(years-9, two-8)
+npadvmod(ago-10, years-9)
+advmod(unfold-7, ago-10)
+
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NNS decades)))
+    (, ,)
+    (NP (DT the)
+      (ADJP (RB once) (JJ thriving))
+      (JJ industrial) (NN city))
+    (VP (VBD bought)
+      (NP (PRP$ its) (NN water))
+      (PP (IN from)
+        (NP (NNP Detroit))))
+    (. .)))
+
+prep_for(bought-9, decades-2)
+det(city-8, the-4)
+advmod(thriving-6, once-5)
+amod(city-8, thriving-6)
+amod(city-8, industrial-7)
+nsubj(bought-9, city-8)
+root(ROOT-0, bought-9)
+poss(water-11, its-10)
+dobj(bought-9, water-11)
+prep_from(bought-9, Detroit-13)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP (VBN piped)
+        (PP (IN from)
+          (NP (NNP Lake) (NNP Huron)))
+        (, ,)
+        (PP (IN with)
+          (NP
+            (NP (NN corrosion) (NNS chemicals))
+            (VP (VBN added)
+              (PP (IN along)
+                (NP (DT the) (NN way))))))))
+    (. .)))
+
+nsubjpass(piped-3, It-1)
+auxpass(piped-3, was-2)
+root(ROOT-0, piped-3)
+nn(Huron-6, Lake-5)
+prep_from(piped-3, Huron-6)
+nn(chemicals-10, corrosion-9)
+prep_with(piped-3, chemicals-10)
+vmod(chemicals-10, added-11)
+det(way-14, the-13)
+prep_along(added-11, way-14)
+

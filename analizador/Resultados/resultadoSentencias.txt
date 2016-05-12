@@ -1,0 +1,5 @@
+1||||||||  federal_JJ government_NN suspended_VBD sales_NNS U.S._NNP savings_NNS bonds_NNS Congress_NNP n't_RB lifted_VBN ceiling_NN government_NN debt_NN ._.
+ ||||||||  |||||||| , U.S., Congress||||||||  (NP (PRP She))
+ (NP (PRP$ her) (NN homework))))
+|||||||| The federal government suspended sales of U.S. savings bonds because Congress hasn't lifted the ceiling on government debt. 
+

@@ -1,0 +1,21 @@
+1||||||||  debacle_NN Flint_NNP began_VBD unfold_VB two_CD years_NNS ago_RB ._.
+ ||||||||  |||||||| , Flint||||||||  (NP
+ (NP (DT The) (NN debacle))
+ (PP (IN in)
+ (NP (NNP Flint))))
+ (NP (CD two) (NNS years))
+|||||||| The debacle in Flint began to unfold two years ago.
+2||||||||  decades_NNS ,_, thriving_VBG industrial_JJ city_NN bought_VBD water_NN Detroit_NNP ._.
+ ||||||||   its|||||||| , Detroit||||||||  (NP (NNS decades)))
+ (NP (DT the)
+ (NP (PRP$ its) (NN water))
+ (NP (NNP Detroit))))
+|||||||| For decades, the once thriving industrial city bought its water from Detroit.
+3||||||||  piped_VBN Lake_NNP Huron_NNP ,_, corrosion_NN chemicals_NNS added_VBD along_IN way_NN ._.
+ ||||||||   it|||||||| , Lake, Huron||||||||  (NP (PRP It))
+ (NP (NNP Lake) (NNP Huron)))
+ (NP
+ (NP (NN corrosion) (NNS chemicals))
+ (VP (VBN added)
+ (NP (DT the) (NN way))))))))
+|||||||| It was piped from Lake Huron, with corrosion chemicals added along the way.

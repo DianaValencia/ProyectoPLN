@@ -1,0 +1,8 @@
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ has)
+      (VP (VBN finished)
+        (NP (PRP$ her) (NN homework))))))
+
+
